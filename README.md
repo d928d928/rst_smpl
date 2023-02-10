@@ -7,3 +7,8 @@
 - 目的
   - RustとVue.jsに慣れつつ本格アプリの準備
 
+- 使用技術
+  - Rust
+  - axtix-web
+  - vue.js
+  
