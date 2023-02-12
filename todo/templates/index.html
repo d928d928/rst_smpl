@@ -3,11 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>test title</title>
+    <title>Rust新アプリ開発</title>
+    <style>
+        body {
+            width: 400px;
+            margin: 100px auto;
+        }
+    </style>
 </head>
 
+
 <body>
-    <div>
+    <div class="entry">
         {% for entry in entries %}
         <div>
             <div>id: {{ entry.id }}, text: {{ entry.text }}</div>
@@ -21,12 +28,12 @@
 
     <form action="/add" method="post">
         <div>
-            <input name="text">
+            
+            <textarea rows="10" cols="60" name="text"></textarea>
         </div>
         <div>
             <button>add</button>
         </div>
     </form>
 </body>
-
 </html>
